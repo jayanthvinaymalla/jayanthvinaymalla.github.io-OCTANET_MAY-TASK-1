@@ -1,0 +1,301 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+  
+  body,html {
+    font-family: 'Arial', sans-serif;
+    height : 100%;
+    width: 100%;
+    background-color: #F8F7F4;
+  }
+  
+  main{
+    width: 100%;
+  }
+
+  .heroContainer{
+    width: 100%;
+    height: 100vh;
+  }
+  .heroContainer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    padding: 0 3.4vw;
+    background-color:#69dafc;
+    background : linear-gradient(#69dafc,#d496eb);
+  }
+  .heroContainer nav .links a{
+    font-family: heading;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5vw;
+  }
+  .links{
+    display: flex;
+    gap: 2.5vw; 
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .heroContainer nav .signUps{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+  .links img{
+    width: 20vw;
+    height: 8vw;
+    margin-top: -1px;
+  }
+  #signIn{
+    background-color: #0D0C22;
+    background: linear-gradient(black,green);
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 1.3vw 2vw;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+  }
+  .signUps input{
+    background-color: #FFFFFF;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 1.3vw 2vw;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+  }
+  .links i{
+    display: none;
+  }
+  
+  .hero{
+    width: 100%;
+    height: calc(100% - 16.8vh);
+    background-color: blanchedalmond;
+    background : linear-gradient(violet,#FFDA7A);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3vw;
+    padding: 3vw 0 0 0;
+  }
+  .hero h2{
+    background: linear-gradient(orange,yellow);
+    padding: 0.7vw 1.6vw;
+    border-radius: 2vw;
+    font-size: 1.3vw;
+    font-family: heading;
+    font-weight: 650;
+  }
+  .hero h1{
+    font-size: 5.5vw;
+    font-family: heading;
+    font-weight: 500;
+    line-height: 5.4vw;
+    color: rgb(1, 97, 1);
+  }
+  .hero h3{
+    font-size: 1.6vw;
+    color: peru;
+  }
+  
+
+  section{
+    width: 100%;
+    padding: 4vw 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section h2{
+    font-size: 4vw;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+  section .box{
+    width: 26vw;
+    height: 25vw;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 12px;
+  
+  }
+  .hover{
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 1.2vw 0.2vw 1.2vw;
+    opacity: 0;
+    transition: all linear 0.2s;
+  }
+  section .box .boxImg:hover .hover{
+    opacity: 1;
+  }
+  .hover h6{
+    font-size: 1.52vw;
+    color: white;
+    font-weight: 100;
+  }
+  .hover i{
+    background-color: white ;
+    padding: 10px 12px;
+    border-radius: 50%;
+  }
+  section .box .boxImg{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  section .box .boxImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  section .box .boxFooter{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #4e4e4e;
+  }
+  section .box .boxFooter img{
+    width: 1.8vw;
+    border-radius: 50%;
+  }
+  .boxFooter i{
+    font-size: 1.1vw;
+  }
+  section .box .boxFooter p{
+    font-size: 1vw;
+    color: black;
+  }
+  
+  .join{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(250, 173, 29);
+    background: linear-gradient( rgb(250, 173, 29),rgb(2, 255, 242));
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .join h2{ 
+    font-family: heading;
+    font-size: 5vw;
+    margin: 0;
+    line-height: 5.5vw;
+    color: #F8F7F4;
+  }
+  .join p{
+    font-size: 1.6vw;
+    font-weight: 100;
+    color: #000000;
+    line-height: 3vw;
+
+  }
+  .join .btns{
+    gap: 1.5vw;
+    display: flex;
+  }
+  .join .btns button{
+    width: 13vw;
+    height: 4.5vw;
+    background: linear-gradient(rgb(88, 88, 245),rgb(148, 44, 44));
+    color: rgb(255, 252, 252);
+    border: none;
+    border-radius: 3vw;
+    font-weight: 600;
+    font-size: 1.2vw;
+  }
+  .join h6{
+    font-size: 1.6vw;
+    font-weight: 300;
+    margin-top: 1.5vw;
+    color: #000000;
+  }
+  .join h6 span{
+    text-decoration: underline;
+  }
+
+  .join .a-xlarge {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgb(139, 30, 248);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 1.3vw 2vw;
+    outline: none;
+    border: none;
+    border-radius: 1vw;
+  }
+ 
+  footer{
+    width: 100%;
+    height: 22vh;
+    margin-top: 8vw;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #d496eb;
+    background : linear-gradient(#69dafc,#d496eb);
+  }
+ 
+  .footer-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 1.3vw 2vw;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+  }
+  .footer-part div{
+    display: flex;
+    gap: 1.2vw;
+    color: #828282;
+  }
+  .footer-part div .c-xlarge {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px;
+    color: #757575;
+    font-size: 24px;
+  }
+
+.fa {
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
